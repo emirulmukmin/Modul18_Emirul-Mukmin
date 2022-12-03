@@ -30,7 +30,7 @@ const Login = () => {
       try {
         // 1. Lakukan Axios POST ke backend pada endpoint /login
         // dengan parameter 'email' dan 'pass' yang didapat dari form
-        const response = await axios.post(`https://${process.env.REACT_APP_BACKEND_URL}/login`, {
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
           email: data.get('email'),
           password: data.get('password')
         })
