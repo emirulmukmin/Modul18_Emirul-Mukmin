@@ -30,7 +30,7 @@ const Register = () => {
     try {
       // dengan parameter 'email' dan 'pass' yang didapat dari form
       // body yang digunakan adalah username, email, dan password
-      const response = await axios.post(`https://${process.env.REACT_APP_BACKEND_URL}/register`, {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
         username: data.get('username'),
         email: data.get('email'),
         password: data.get('password')
